@@ -7,16 +7,13 @@
 São raros pois apenas 1 em cada 10.000 esquilos é preto.
 <br>  
 <br>  
-<br>  
-
 ## Ta, mas e como faremos isso?
 
 Primero precisamos de um dataset com os avistamentos de esquilos em NY, podemos pegar esta informação de um site que possui datasets de NY, através do seguinte link.
 
 [https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw/data](https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw/data)
-
-  
-
+<br>  
+<br>
 ## Com o dataset em mãos, podemos começar nosso projeto.
 
 1.  Criamos uma pasta com nome qualquer
@@ -27,9 +24,8 @@ Primero precisamos de um dataset com os avistamentos de esquilos em NY, podemos 
     npm init
     ou
     npm init -y (ignora as perguntas que eles fazem, como versão, nome..)
-
-  
-
+<br>  
+<br>  
 ## Agora temos que decidir qual módulo CSV iremos utilizar
 
 Entrar no site npmjs.com e pesquisar por csv.
