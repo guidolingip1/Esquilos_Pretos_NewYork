@@ -39,7 +39,6 @@ Após decidirmos qual pacote vamos utilizar, abrimos o link do pacote e copiamos
 Eu irei utilizar o csv-parse e seu código de instalação é:
 
     npm i csv-parse
-<br><br>
 
 Então só precisamos ir na pasta do nosso projeto, após o npm init e rodar o código acima.<br><br>
 
@@ -48,9 +47,7 @@ Então só precisamos ir na pasta do nosso projeto, após o npm init e rodar o c
 Para isso precisamos utilizar o require
 
     const parse = require('csv-parse');
-
-  
-
+<br><br>
 ## Além do parse, utilizaremos o 'fs', file system
 
 Utilizaremos o fs para abrir nosso csv como uma "stream" de dados, jajá veremos mais.
