@@ -53,9 +53,7 @@ Para isso precisamos utilizar o require
 Utilizaremos o fs para abrir nosso csv como uma "stream" de dados, jajá veremos mais.
 
     const fs = require('fs');
-
-  
-
+<br><br>
 ## Vamos criar um array para armazenar nossos esquilos, além disso vamos criar algumas variáveis para alguns valores.
 
     const esquilos = []; //Aqui temos um array para armazenarmos nossos esquilos
@@ -63,9 +61,7 @@ Utilizaremos o fs para abrir nosso csv como uma "stream" de dados, jajá veremos
     // maiorOcorrencia eu irei utilizar para saber qual é a área onde os esquilos raros mais são vistos
     // Contador vai ser usado como um auxiliar para determinar a maiorOcorrencia
     // qtdEsquilos é só para termos um registro de quantos esquilos foram analisados no total.
-
-  
-
+<br><br>
 ## Vamos criar uma função para auxiliar no filtro
 
 Passaremos essa função utilizando o argumento data como entrada, onde data será um esquilo qualquer, e se esse esquilo tiver a cor preta retorna true
@@ -73,9 +69,7 @@ Passaremos essa função utilizando o argumento data como entrada, onde data ser
     function filtraEsquilos(esquilo) {
       return esquilo['Primary Fur Color'] === 'Black';
     }
-
-  
-
+<br><br>
 ## Agora vamos ler nosso csv como uma stream de dados
 
 Ah Gui, mas o que é uma stream de dados?, Uma stream de dados é um "Fluxo de dados", ou seja os dados vão sendo processados conforme vão sendo lidos.
@@ -99,9 +93,7 @@ Por exemplo: comments: '#', diria para o parse que tudo que vem antecedido por u
         columns: true
       }))
     //Tem mais código aqui em baixo, continue lendo.
-
-  
-
+<br><br>
 ## Ta, mas e a data?
 
 Nosso createReadStream é um EventEmmiter, pois quando ele esta pronto ou sofre alguma alteração que estamos observando, ele emite um sinal, e podemos observar este sinal usando o .on() em javascript.
@@ -118,9 +110,7 @@ Aqui dizemos o seguinte, quando recebermos o sinal 'data', pegamos a data e faze
         esquilos.push(data);
       })
     // Tem mais, não se desespere
-
-  
-
+<br><br>
 ## Mas e se acontecer algum erro?
 
 Então podemos "observar" pelo erro, assim como observamos pela data lá em cima.
@@ -137,9 +127,7 @@ Então podemos "observar" pelo erro, assim como observamos pela data lá em cima
     .on('error', (err) => {
         console.log(err)
       })
-
-  
-
+<br><br>
 ## E se tudo deu certo?
 
 Então podemos adicionar outro .on que observa o evento 'end'
@@ -165,9 +153,7 @@ Explicando o código acima.
 1.  Eu realizo uma filtragem dos hectares pois quero saber qual é o lugar mais propício para encontrar um esquilo preto, então a const hectares vai ter uma lista contendo todos os hectares que esquilos pretos foram vistos.
 2.  Após isso eu coloco todos em ordem alfabética, pois assim eu posso contar quantos se repetem em sequência, se eu tenho 'abac', eu teria que verificar todos os elementos e fazer uma contagem mais "complexa", já se eu contar 'aabc', eu posso contar 2 as em sequencia e parar quando o elemento difere do analisado anteriormente.
 3.  Após isso eu só imprimo os resultados em tela
-
-
-
+<br><br>
 ## Código completo e saída
 
     const parse = require('csv-parse');
