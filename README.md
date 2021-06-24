@@ -1,6 +1,7 @@
 
 # Esquilos pretos em NewYork
-
+## Mapa do Central Park
+![MapaEsquilos]('https://github.com/guidolingip1/Esquilos_Pretos_NewYork/blob/main/esquilos.png')
 
 ## Olá meu povo, é isso mesmo, vamos encontrar esquilos raros em NY usando Node e Js.
 
