@@ -39,6 +39,7 @@ Após decidirmos qual pacote vamos utilizar, abrimos o link do pacote e copiamos
 Eu irei utilizar o csv-parse e seu código de instalação é:
 
     npm i csv-parse
+<br><br>
 
 Então só precisamos ir na pasta do nosso projeto, após o npm init e rodar o código acima.<br><br>
 
