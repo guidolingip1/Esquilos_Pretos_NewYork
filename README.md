@@ -40,9 +40,7 @@ Eu irei utilizar o csv-parse e seu código de instalação é:
 
     npm i csv-parse
 
-Então só precisamos ir na pasta do nosso projeto, após o npm init e rodar o código acima.
-
-  
+Então só precisamos ir na pasta do nosso projeto, após o npm init e rodar o código acima.<br><br>
 
 ## Após instalado nosso modulo csv, vamos "importar" ele
 
