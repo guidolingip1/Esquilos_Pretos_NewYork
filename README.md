@@ -1,10 +1,10 @@
 
-# Esquilos_Pretos_NewYork
+# Esquilos pretos em NewYork
 
 
 ## Olá meu povo, é isso mesmo, vamos encontrar esquilos raros em NY usando Node e Js.
 
-São raros pois apenas 1 em cada 10.000 esquilos é preto.
+São raros pois apenas 1 em cada 10.000 esquilos é preto.\
 
   
 
