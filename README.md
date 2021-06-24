@@ -25,7 +25,7 @@ Primero precisamos de um dataset com os avistamentos de esquilos em NY, podemos 
     ou
     npm init -y (ignora as perguntas que eles fazem, como versão, nome..)
 <br>  
-<br>  
+<br>
 ## Agora temos que decidir qual módulo CSV iremos utilizar
 
 Entrar no site npmjs.com e pesquisar por csv.
